@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reveal Image</title>
+    <style>
+      body {
+        background-color: red;
+      }
+      .img-cont {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .image {
+        transition: 0.2s ease-in-out all;
+        border-radius: 5px;
+        cursor: pointer;
+        clip-path: circle(35px at 50px 50px);
+        height: 600px;
+        width: 600px;
+      }
+      .image:hover {
+        clip-path: circle(100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img-cont">
+      <img src="./funny.jpg" alt="FunnyMan" class="image" />
+    </div>
+  </body>
+</html>
